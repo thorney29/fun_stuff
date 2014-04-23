@@ -6,7 +6,7 @@
 	font-style: "Gill-sans", sans-serif;
 }
 
-.number {
+input [type="number"] {
 	border: 1px thin black;
 	display: inline;
 	width: 30px;
