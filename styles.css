@@ -1,13 +1,30 @@
-.wrapper {
-	width: 70%;
-	display: block;
-	margin: 0 auto;
-	padding: 2.5em;
-	font-style: arial, sans-serif;
-}
+h1 {
+  background: green;
+  color: white;
+  padding: 10px;
+  font: 2.2em sans-serif; }
 
-input [type="number"] {
-	border: 1px thin black;
-	display: inline;
-	width: 30px;
-}
+body {
+  background: greenyellow;
+  font-family: arial, sans-serif; }
+
+.wrapper {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  padding: 2.5em; }
+
+input[type=text], input[type=number] {
+  font-size: 1em;
+  width: 2.5em;
+  padding: 3px;
+  margin: 0;
+  border: 1px solid green;
+  border-radius: 5px;
+  text-align: center; }
+
+input[type=text] {
+  width: 30%; }
+
+input[type=number]:focus {
+  outline: none; }
