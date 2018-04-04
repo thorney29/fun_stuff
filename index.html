@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+<meta charset="utf-8">
+<title>Learning Angular.js</title>
+<link  href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<h1>Here is an example of Data Binding</h1>
+<h2>Here the input area is bound to the name display</h2>
+	<div class="wrapper">
+		<input type="text" ng-model="user_name" />
+		<p>Your name: {{ user_name }}</p>
+	</div>
+<h2>Want to do math? We can do that too.</h2>
+	<div class="wrapper">
+		<input type="number" ng-model="num1" /> 
+		<input type="number" ng-model="num2" />
+	
+<p>The sum of the first number ( {{num1}} ) and the second number ( {{num2}} ) is {{num1 + num2}. </p>
+<p>If we multiply the first and second number the answer is {{num1 * num2}}.</p>
+	</div> 
+
+	<div ng-controller="MainCtrl">
+		<h1>The People App</h1>
+		<h4>View People</h4>
+			<ul>
+				<li ng-repeat="person in people">
+				{{ person.name }} from {{ person.city }}, {{ person.state }}
+				</li>
+		    </ul>
+		<div class="wrapper">
+		<h4>Add People</h4>
+		<p>Enter the person's name:</p>
+			<input type="text" ng-model="person_name" />
+		<p>Enter the person's city:</p>
+			<input type="text" ng-model="person_city" />
+		<p>Enter the person's state:</p>
+			<input type="text" ng-model="person_state" /><br>
+			<button ng-click="addPerson()">Add the Person!</button>
+	</div></div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="controllers.js"></script>
+</body>
+</html>
